@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #fce4ec;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #d81b60;
+            font-weight: bold;
+        }
+        .click-text {
+            font-size: 24px;
+            cursor: pointer;
+            color: #880e4f;
+            text-decoration: underline;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey Babe ❤️</h1>
+    <p class="click-text" onclick="showMessage('message1')">Click here for a surprise</p>
+    <p class="hidden-message" id="message1">I'm really sorry, please forgive me 🥺❤️</p>
+    
+    <p class="click-text" onclick="showMessage('message2')">Click here for another surprise</p>
+    <p class="hidden-message" id="message2">You're the best thing that ever happened to me 💖</p>
+    
+    <p class="click-text" onclick="showMessage('message3')">Click here for something special</p>
+    <p class="hidden-message" id="message3">I promise to make it up to you! 🌹</p>
+    
+    <p class="click-text" onclick="showMessage('message4')">Click here for a secret</p>
+    <p class="hidden-message" id="message4">I love you more than words can say ❤️</p>
+    
+    <p class="click-text" onclick="showImage()">Click here for a cute pic</p>
+    <img id="hiddenImage" src="your-image-url.jpg" alt="A cute surprise">
+    
+    <script>
+        function showMessage(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function showImage() {
+            document.getElementById('hiddenImage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
